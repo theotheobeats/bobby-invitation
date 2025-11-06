@@ -975,23 +975,50 @@
         updateCountdown();
         setInterval(updateCountdown, 1000);
 
-        // Handle personalized greeting
-        function setPersonalizedGreeting() {
+        // Handle personalized greeting with API validation
+        async function setPersonalizedGreeting() {
             const urlParams = new URLSearchParams(window.location.search);
-            const nameParam = urlParams.get("name");
+            const idParam = urlParams.get("id");
             const validInvitationDiv =
                 document.getElementById("valid-invitation");
             const invalidInvitationDiv =
                 document.getElementById("invalid-invitation");
+            const loadingDiv =
+                document.getElementById("initial-loading");
 
-            // Use name parameter directly from URL
-            if (nameParam) {
-                document.getElementById("attendee-name").textContent =
-                    decodeURIComponent(nameParam);
-                validInvitationDiv.style.display = "block";
-                invalidInvitationDiv.style.display = "none";
+            if (idParam) {
+                try {
+                    // Fetch attendee data from API
+                    const response = await fetch(
+                        `https://nikayu-bobbystefany-qroiau-84bf02-160-187-210-229.traefik.me/api/attendees/${idParam}`
+                    );
+                    
+                    if (response.ok) {
+                        const attendeeData = await response.json();
+                        
+                        // Display attendee name from API response
+                        document.getElementById("attendee-name").textContent = attendeeData.name;
+                        
+                        // Hide loading, show valid invitation
+                        loadingDiv.style.display = "none";
+                        validInvitationDiv.style.display = "block";
+                        invalidInvitationDiv.style.display = "none";
+                    } else {
+                        // Invalid ID - show invalid invitation
+                        loadingDiv.style.display = "none";
+                        validInvitationDiv.style.display = "none";
+                        invalidInvitationDiv.style.display = "block";
+                    }
+                } catch (error) {
+                    console.error("Error fetching attendee data:", error);
+                    // Fallback to invalid invitation on API error
+                    loadingDiv.style.display = "none";
+                    validInvitationDiv.style.display = "none";
+                    invalidInvitationDiv.style.display = "block";
+                }
             } else {
-                // Show invalid invitation screen if no name parameter
+                // No ID parameter - show invalid invitation
+                loadingDiv.style.display = "none";
                 validInvitationDiv.style.display = "none";
                 invalidInvitationDiv.style.display = "block";
             }
@@ -1073,12 +1100,8 @@
                 bumperVideo.preload = "auto";
             }
 
-            // Show invitation after 2-3 seconds of preloading
-            setTimeout(() => {
-                document.getElementById("initial-loading").style.display =
-                    "none";
-                setPersonalizedGreeting();
-            }, 2500);
+            // Handle personalized greeting and show invitation
+            setPersonalizedGreeting();
 
             loadComments();
 
