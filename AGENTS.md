@@ -20,7 +20,7 @@
 
 ### JavaScript
 - Vanilla JS only, embedded in HTML
-- APIs: `https://nikayu-bobbystefany-qroiau-84bf02-160-187-210-229.traefik.me/api/` (attendee validation), `https://dashboard.sayjesstoleo.site/api/` (comments)
+- APIs: `https://nikayu-bobbystefany-qroiau-84bf02-160-187-210-229.traefik.me/api/` (attendee validation & comments)
 - Intersection Observer for animations
 - Media preloading, autoplay error handling
 
