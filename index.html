@@ -1,0 +1,1135 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
+        <title>The Wedding of Boby & Stefany | November 22, 2025</title>
+
+        <!-- Open Graph Meta Tags for Link Preview -->
+        <meta property="og:title" content="The Wedding of Boby & Stefany" />
+        <meta
+            property="og:description"
+            content="You're invited to celebrate the wedding of Boby and Stefany on November 22, 2025. Join us for a beautiful ceremony and reception."
+        />
+        <meta property="og:image" content="https://titu.b-cdn.net/bobby_wedding/bobby1.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" content="https://sayjesstoleo.site" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Boby & Stefany Wedding" />
+
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="The Wedding of Boby & Stefany"
+        />
+        <meta
+            name="twitter:description"
+            content="You're invited to celebrate the wedding of Boby and Stefany on November 22, 2025."
+        />
+        <meta name="twitter:image" content="https://titu.b-cdn.net/bobby_wedding/bobby1.jpg" />
+
+        <!-- Cache Control Meta Tags -->
+        <meta
+            http-equiv="Cache-Control"
+            content="no-cache, no-store, must-revalidate"
+        />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css?v=20251102" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Monsieur+La+Doulaise&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <section class="section-0">
+            <div class="section-0-background"></div>
+            <div class="section-0-overlay"></div>
+            <div class="section-0-content">
+                <div class="invitation-card" id="invitation-card">
+                    <div
+                        id="initial-loading"
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 100%;
+                        "
+                    >
+                        <div
+                            class="loading-spinner"
+                            style="margin-bottom: 15px"
+                        ></div>
+                        <p
+                            style="
+                                color: rgba(255, 255, 255, 0.9);
+                                font-size: 14px;
+                                letter-spacing: 1px;
+                            "
+                        >
+                            Loading invitation...
+                        </p>
+                    </div>
+                    <div id="valid-invitation" style="display: none">
+                        <h1 class="invitation-title">
+                            The Wedding of <br> Boby and Stefany
+                        </h1>
+                        <div class="invitation-greeting">
+                            <p class="dear-text">Dear,</p>
+                            <p class="attendee-name" id="attendee-name"></p>
+                        </div>
+                        <button
+                            class="open-invitation-btn"
+                            onclick="openInvitation()"
+                        >
+                            Open Invitation
+                        </button>
+                    </div>
+                    <div id="invalid-invitation" style="display: none">
+                        <h1
+                            class="invitation-title"
+                            style="margin-bottom: 20px"
+                        >
+                            Invitation Not Found
+                        </h1>
+                        <p
+                            style="
+                                color: rgba(255, 255, 255, 0.9);
+                                font-size: 16px;
+                                margin-bottom: 30px;
+                                line-height: 1.5;
+                            "
+                        >
+                            This invitation link appears to be invalid or has
+                            expired.<br />
+                            Please contact the couple for a valid invitation
+                            link.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero">
+            <div class="hero-background"></div>
+            <div class="hero-overlay"></div>
+            <div class="bumper-container">
+                <div class="loading-state" id="loadingState">
+                    <div class="loading-spinner"></div>
+                    <p class="loading-text">Loading Invitation...</p>
+                </div>
+                <video class="bumper-video" muted playsinline preload="auto">
+                    <source
+                        src="https://titu.b-cdn.net/bumper-chinese.mp4"
+                        type="video/mp4"
+                    />
+                </video>
+                <audio id="bgm" loop preload="auto">
+                    <source
+                        src="https://titu.b-cdn.net/bgm.mp3"
+                        type="audio/mpeg"
+                    />
+                </audio>
+            </div>
+            <div class="hero-content">
+                <h1 class="wedding-title animate-on-scroll">The Wedding of</h1>
+                <h2 class="couple-names animate-on-scroll delay-1">
+                    Boby <br />
+                    & <br />
+                    Stefany
+                </h2>
+                <p class="wedding-date animate-on-scroll delay-2">
+                    November 22, 2025
+                </p>
+                <div class="scroll-indicator animate-on-scroll delay-3">
+                    <div class="scroll-icon"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-2">
+            <div class="section-2-background"></div>
+            <div class="section-2-overlay"></div>
+            <div class="section-2-content">
+                <h2 class="section-title animate-on-scroll">
+                    The Endless <br />
+                    <span class="monsieur animate-on-scroll delay-1">Love</span>
+                </h2>
+                <p class="section-paragraph animate-on-scroll delay-2">
+                    In the sacred union of Boby and Stefany, love blossoms
+                    into an eternal melody—tender as the morning light,
+                    steadfast as the stars. They stand together as two souls
+                    united, discovering the infinite beauty of devotion. With
+                    every glance a promise and every touch a prayer, their
+                    embrace whispers the rhythm of endless love—gentle,
+                    enduring, and forever true
+                </p>
+            </div>
+        </section>
+
+        <section class="section-3">
+            <div class="section-3-background"></div>
+            <div class="section-3-top-content">
+                <h2 class="section-3-title animate-on-scroll">Groom & Bride</h2>
+                <p class="section-3-description animate-on-scroll delay-1">
+                    Together with joyful hearts, we invite you to witness the
+                    beginning of our forever journey in love.
+                </p>
+            </div>
+            <div class="section-3-bottom-content">
+                <div class="couple-info">
+                    <div class="groom-section animate-on-scroll delay-2">
+                        <div class="person-photo">
+                            <img
+                                src="https://titu.b-cdn.net/bobby_wedding/bobby1.jpg"
+                                alt="Leonardo"
+                                class="couple-photo groom-photo"
+                            />
+                        </div>
+                        <h3 class="monsieur animate-on-scroll delay-3">
+                            Boby Chandra
+                        </h3>
+                         <p class="person-parents animate-on-scroll delay-3">
+                            Eldest Son of (late) Mr. Antony Chandra & Mrs. Yenni
+                        </p>
+                    </div>
+
+                    <div class="bride-section animate-on-scroll delay-2">
+                        <div class="person-photo">
+                            <img
+                                src="https://titu.b-cdn.net/bobby_wedding/bobby2.jpg"
+                                alt="Jessica"
+                                class="couple-photo bride-photo"
+                            />
+                        </div>
+                        <h3 class="monsieur animate-on-scroll delay-3">
+                            Stefany
+                        </h3>
+                         <p class="person-parents animate-on-scroll delay-3">
+                            Daughter of Mr. Then Khek Phin & Mrs. Liong Mie Mie
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-4">
+            <div class="section-4-background"></div>
+            <div class="section-4-overlay"></div>
+            <div class="save-the-date-widget">
+                <h2 class="save-title monsieur animate-on-scroll">
+                    Save The Date
+                </h2>
+                <div class="countdown-timer animate-on-scroll delay-1">
+                    <div class="countdown-item animate-on-scroll delay-2">
+                        <span class="countdown-value" id="days">00</span>
+                        <span class="countdown-label">DAYS</span>
+                    </div>
+                    <div class="countdown-item animate-on-scroll delay-2">
+                        <span class="countdown-value" id="hours">00</span>
+                        <span class="countdown-label">HOURS</span>
+                    </div>
+                    <div class="countdown-item animate-on-scroll delay-2">
+                        <span class="countdown-value" id="minutes">00</span>
+                        <span class="countdown-label">MINUTES</span>
+                    </div>
+                    <div class="countdown-item animate-on-scroll delay-2">
+                        <span class="countdown-value" id="seconds">00</span>
+                        <span class="countdown-label">SECONDS</span>
+                    </div>
+                </div>
+                <p class="save-note animate-on-scroll delay-3">
+                    We can't wait to celebrate with you!
+                </p>
+            </div>
+        </section>
+
+        <section class="section-5">
+            <div class="section-5-background"></div>
+            <div class="section-5-overlay"></div>
+            <div class="wedding-details-container">
+                <div class="ceremony-container animate-on-scroll">
+                    <h3 class="ceremony-title animate-on-scroll delay-1">
+                        Holy Matrimony
+                    </h3>
+                    <p class="ceremony-date animate-on-scroll delay-2">
+                        22 November 2025
+                    </p>
+                    <p class="ceremony-time animate-on-scroll delay-2">
+                        10:00 WIB
+                    </p>
+                    <p class="ceremony-venue animate-on-scroll delay-2">
+                        GPDI Segaran
+                    </p>
+                    <p class="ceremony-address animate-on-scroll delay-2">
+                        Pemberkatan Nikah
+                    </p>
+                    <button
+                        class="maps-button animate-on-scroll delay-3"
+                        onclick="window.open('https://maps.app.goo.gl/bZQEaeUfYGAD5vK47', '_blank')"
+                    >
+                        View on Google Maps
+                    </button>
+                </div>
+                <div class="reception-container animate-on-scroll delay-1">
+                    <h3 class="reception-title animate-on-scroll delay-2">
+                        Wedding Reception
+                    </h3>
+                    <p class="reception-date animate-on-scroll delay-2">
+                        22 November 2025
+                    </p>
+                    <p class="reception-time animate-on-scroll delay-2">
+                        18:00 WIB
+                    </p>
+                    <p class="reception-venue animate-on-scroll delay-2">
+                        YAP Ballroom
+                    </p>
+                    <p class="reception-address animate-on-scroll delay-2">
+                        Resepsi
+                    </p>
+                    <button
+                        class="maps-button animate-on-scroll delay-3"
+                        onclick="window.open('https://maps.app.goo.gl/XTDbdgpQQFNsjGhR8', '_blank')"
+                    >
+                        View on Google Maps
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-6">
+            <img
+                src="https://titu.b-cdn.net/chinese_6.png"
+                class="section-6-overlay"
+                alt="Photo 1"
+            />
+            <br /><br />
+            <br />
+            <div class="section-6-content">
+                <h2 class="section-6-title animate-on-scroll">
+                    Our <span class="monsieur">Moments</span>
+                </h2>
+                <div class="moments-landscape-container animate-on-scroll delay-1">
+                    <img
+                        src="https://titu.b-cdn.net/bobby_wedding/bobby20_land.jpg"
+                        class="landscape-photo-item"
+                        alt="Landscape Moment 1"
+                    />
+                    <br /><br />
+                    <img
+                        src="https://titu.b-cdn.net/bobby_wedding/bobby21_land.jpg"
+                        class="landscape-photo-item delay-1"
+                        alt="Landscape Moment 2"
+                    />
+                    <br /><br />
+                    <img
+                        src="https://titu.b-cdn.net/bobby_wedding/bobby22_land.jpg"
+                        class="landscape-photo-item delay-2"
+                        alt="Landscape Moment 3"
+                    />
+                    <br /><br />
+                    <img
+                        src="https://titu.b-cdn.net/bobby_wedding/bobby23_land.jpg"
+                        class="landscape-photo-item delay-3"
+                        alt="Landscape Moment 4"
+                    />
+                    <br /><br />
+                    <img
+                        src="https://titu.b-cdn.net/bobby_wedding/bobby24_land.jpg"
+                        class="landscape-photo-item delay-4"
+                        alt="Landscape Moment 5"
+                    />
+                    <br /><br />
+                    <img
+                        src="https://titu.b-cdn.net/bobby_wedding/bobby25_land.jpg"
+                        class="landscape-photo-item delay-5"
+                        alt="Landscape Moment 6"
+                    />
+                    <br /><br />
+                    <img
+                        src="https://titu.b-cdn.net/bobby_wedding/bobby26_land.jpg"
+                        class="landscape-photo-item"
+                        alt="Landscape Moment 7"
+                    />
+                </div>
+                <div class="photo-grid animate-on-scroll delay-2">
+                    <div class="photo-row double">
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby3.jpg"
+                            class="photo-item animate-on-scroll delay-3"
+                            alt="Wedding Photo 1"
+                        />
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby4.jpg"
+                            class="photo-item animate-on-scroll delay-3"
+                            alt="Wedding Photo 2"
+                        />
+                    </div>
+                    <div class="photo-row double">
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby5.jpg"
+                            class="photo-item animate-on-scroll delay-4"
+                            alt="Wedding Photo 3"
+                        />
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby6.jpg"
+                            class="photo-item animate-on-scroll delay-4"
+                            alt="Wedding Photo 4"
+                        />
+                    </div>
+                    <div class="photo-row double">
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby7.jpg"
+                            class="photo-item animate-on-scroll delay-5"
+                            alt="Wedding Photo 5"
+                        />
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby8.jpg"
+                            class="photo-item animate-on-scroll delay-5"
+                            alt="Wedding Photo 6"
+                        />
+                    </div>
+                    <div class="photo-row double">
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby9.jpg"
+                            class="photo-item animate-on-scroll delay-1"
+                            alt="Wedding Photo 7"
+                        />
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby10.jpg"
+                            class="photo-item animate-on-scroll delay-1"
+                            alt="Wedding Photo 8"
+                        />
+                    </div>
+                    <div class="photo-row double">
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby11.jpg"
+                            class="photo-item animate-on-scroll delay-2"
+                            alt="Wedding Photo 9"
+                        />
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby12.jpg"
+                            class="photo-item animate-on-scroll delay-2"
+                            alt="Wedding Photo 10"
+                        />
+                    </div>
+                    <div class="photo-row double">
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby13.jpg"
+                            class="photo-item animate-on-scroll delay-3"
+                            alt="Wedding Photo 11"
+                        />
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby14.jpg"
+                            class="photo-item animate-on-scroll delay-3"
+                            alt="Wedding Photo 12"
+                        />
+                    </div>
+                    <div class="photo-row double">
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby15.jpg"
+                            class="photo-item animate-on-scroll delay-4"
+                            alt="Wedding Photo 13"
+                        />
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby16.jpg"
+                            class="photo-item animate-on-scroll delay-4"
+                            alt="Wedding Photo 14"
+                        />
+                    </div>
+                    <div class="photo-row double">
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby17.jpg"
+                            class="photo-item animate-on-scroll delay-5"
+                            alt="Wedding Photo 15"
+                        />
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby18.jpg"
+                            class="photo-item animate-on-scroll delay-5"
+                            alt="Wedding Photo 16"
+                        />
+                    </div>
+                    <div class="photo-row double">
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby1.jpg"
+                            class="photo-item animate-on-scroll delay-1"
+                            alt="Wedding Photo 17"
+                        />
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby2.jpg"
+                            class="photo-item animate-on-scroll delay-1"
+                            alt="Wedding Photo 18"
+                        />
+                    </div>
+                    <div class="photo-row double">
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby3.jpg"
+                            class="photo-item animate-on-scroll delay-2"
+                            alt="Wedding Photo 19"
+                        />
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby4.jpg"
+                            class="photo-item animate-on-scroll delay-2"
+                            alt="Wedding Photo 20"
+                        />
+                    </div>
+                    <div class="photo-row double">
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby5.jpg"
+                            class="photo-item animate-on-scroll delay-3"
+                            alt="Wedding Photo 21"
+                        />
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby6.jpg"
+                            class="photo-item animate-on-scroll delay-3"
+                            alt="Wedding Photo 22"
+                        />
+                    </div>
+                    <div class="photo-row double">
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby7.jpg"
+                            class="photo-item animate-on-scroll delay-4"
+                            alt="Wedding Photo 23"
+                        />
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby8.jpg"
+                            class="photo-item animate-on-scroll delay-4"
+                            alt="Wedding Photo 24"
+                        />
+                    </div>
+                    <div class="photo-row double">
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby9.jpg"
+                            class="photo-item animate-on-scroll delay-5"
+                            alt="Wedding Photo 25"
+                        />
+                        <img
+                            src="https://titu.b-cdn.net/bobby_wedding/bobby10.jpg"
+                            class="photo-item animate-on-scroll delay-5"
+                            alt="Wedding Photo 26"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-7">
+            <div class="section-7-background"></div>
+            <div class="section-7-content">
+                <h2 class="section-7-title monsieur animate-on-scroll">
+                    Wedding Gifts
+                </h2>
+                <p class="section-7-subtitle animate-on-scroll delay-1">
+                    Your presence is our greatest gift, but if you wish to
+                    contribute...
+                </p>
+
+                <div class="gift-container animate-on-scroll delay-2">
+                    <div class="gift-card">
+                        <div class="accounts-display">
+                            <div
+                                class="account-section groom-section animate-on-scroll delay-3"
+                            >
+                                <h4 class="account-label">Groom</h4>
+                                <p class="account-name">Boby Chandra</p>
+                                <p class="account-bank">BCA</p>
+                                <p class="account-number">0450793329</p>
+                                <button
+                                    class="copy-btn"
+                                    onclick="navigator.clipboard.writeText('0450793329')"
+                                >
+                                    Copy
+                                </button>
+                            </div>
+                            <div
+                                class="account-section bride-section animate-on-scroll delay-3"
+                            >
+                                <h4 class="account-label">Bride</h4>
+                                <p class="account-name">Stefany Dwi Christiani</p>
+                                <p class="account-bank">BCA</p>
+                                <p class="account-number">8530342299</p>
+                                <button
+                                    class="copy-btn"
+                                    onclick="navigator.clipboard.writeText('8530342299')"
+                                >
+                                    Copy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="gift-note animate-on-scroll delay-4">
+                    Thank you for your generosity and love
+                </p>
+            </div>
+        </section>
+
+        <section class="section-7-5">
+            <div class="section-7-5-background"></div>
+            <div class="section-7-5-content">
+                <img
+                    src="https://titu.b-cdn.net/bobby_wedding/bobby19_land.jpg"
+                    alt="Beautiful Memory"
+                    class="landscape-photo animate-on-scroll"
+                />
+            </div>
+        </section>
+
+        <section class="section-8">
+            <div class="section-8-background"></div>
+            <div class="section-8-overlay"></div>
+            <div class="section-8-content">
+                <h2 class="section-8-title animate-on-scroll">
+                    Best <span class="monsieur">Wishes</span>
+                </h2>
+                <p class="section-8-subtitle animate-on-scroll delay-1">
+                    Share your wishes, memories, or just say hello!
+                </p>
+
+                <div class="message-container">
+                    <form
+                        class="message-form animate-on-scroll delay-2"
+                        id="messageForm"
+                    >
+                        <div class="form-group animate-on-scroll delay-3">
+                            <label for="name">Your Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                maxlength="50"
+                            />
+                        </div>
+
+                        <div class="form-group animate-on-scroll delay-3">
+                            <label for="email">Email (Optional)</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                maxlength="100"
+                            />
+                        </div>
+
+                        <div class="form-group animate-on-scroll delay-3">
+                            <label for="message">Your Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                required
+                                maxlength="500"
+                                rows="4"
+                            ></textarea>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="submit-btn animate-on-scroll delay-4"
+                        >
+                            Send Message
+                        </button>
+                    </form>
+
+                    <div class="messages-display animate-on-scroll delay-2">
+                        <h3 class="messages-title animate-on-scroll delay-3">
+                            Messages from Loved Ones
+                        </h3>
+                        <div
+                            class="messages-list animate-on-scroll delay-4"
+                            id="messagesList"
+                        >
+                            <div
+                                class="loading-messages"
+                                id="loadingMessages"
+                                style="text-align: center; padding: 20px"
+                            >
+                                <div
+                                    class="loading-spinner"
+                                    style="margin: 0 auto 10px"
+                                ></div>
+                                <p
+                                    style="
+                                        color: rgba(255, 255, 255, 0.7);
+                                        font-size: 14px;
+                                    "
+                                >
+                                    Loading messages...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="credits">
+            <p class="credits-text">Made with ❤️ by Nikayu</p>
+        </footer>
+
+        <!-- Music Toggle Button -->
+        <button
+            class="music-toggle"
+            id="musicToggle"
+            onclick="toggleMusic()"
+            title="Toggle Music"
+        >
+            <span class="music-icon" id="musicIcon">🎵</span>
+        </button>
+    </body>
+
+    <script>
+        // Cache busting functionality - force reload assets
+        /*
+    function bustCache() {
+        const cacheBuster = new Date().getTime();
+
+        // Force reload CSS
+        const cssLink = document.querySelector('link[rel="stylesheet"]');
+        if (cssLink && !cssLink.href.includes('?v=')) {
+            const href = cssLink.href.split('?')[0];
+            cssLink.href = href + '?v=' + cacheBuster;
+        }
+
+        // Force reload images with cache busting
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            if (img.src && !img.src.includes('?v=') && img.src.startsWith('https://titu.b-cdn.net/')) {
+                const src = img.src.split('?')[0];
+                img.src = src + '?v=' + cacheBuster;
+            }
+        });
+
+        // Force reload videos
+        const videos = document.querySelectorAll('video source');
+        videos.forEach(source => {
+            if (source.src && !source.src.includes('?v=') && source.src.startsWith('https://titu.b-cdn.net/')) {
+                const src = source.src.split('?')[0];
+                source.src = src + '?v=' + cacheBuster;
+            }
+        });
+
+        console.log('Cache busted with timestamp:', cacheBuster);
+    }
+
+    // Run cache busting on page load
+    window.addEventListener('load', bustCache);
+    */
+
+        // Invitation opening functionality
+        function openInvitation() {
+            const section0 = document.querySelector(".section-0");
+            const hero = document.querySelector(".hero");
+            const bumperContainer = document.querySelector(".bumper-container");
+            const bumperVideo = document.querySelector(".bumper-video");
+            const heroContent = document.querySelector(".hero-content");
+            const loadingState = document.getElementById("loadingState");
+            const bgm = document.getElementById("bgm");
+
+            // Fade out the invitation overlay
+            section0.style.opacity = "0";
+            section0.style.pointerEvents = "none";
+
+            // Start playing background music
+            try {
+                bgm.play().catch((e) =>
+                    console.log("Audio autoplay prevented:", e),
+                );
+            } catch (error) {
+                console.log("Background music not available");
+            }
+
+            // Show hero section
+            hero.style.opacity = "1";
+            hero.style.pointerEvents = "auto";
+
+            // Ensure hero content starts hidden
+            heroContent.style.opacity = "0";
+            heroContent.style.transition = "opacity 1.5s ease-in-out";
+
+            // Show hero content immediately after invitation opens
+            setTimeout(() => {
+                heroContent.style.opacity = "1";
+                initScrollAnimations();
+            }, 500);
+
+            // Show bumper container with loading state
+            bumperContainer.style.display = "flex";
+            bumperContainer.style.opacity = "1";
+            bumperContainer.style.transition = "opacity 1s ease-out";
+
+            // Hide video initially
+            bumperVideo.style.display = "none";
+
+            // Preload video and play when ready
+            bumperVideo.style.display = "block";
+
+            // Wait for video to be ready, then play immediately
+            bumperVideo.addEventListener("loadeddata", () => {
+                bumperVideo.play().catch((e) => {
+                    bumperVideo.muted = true;
+                    bumperVideo.play().catch(() => {
+                        skipToHeroContent();
+                    });
+                });
+            });
+
+            // Fallback: if video takes too long to load, skip to content
+            const loadTimeout = setTimeout(() => {
+                skipToHeroContent();
+            }, 3000);
+
+            // Clear timeout if video loads successfully
+            bumperVideo.addEventListener("loadeddata", () => {
+                clearTimeout(loadTimeout);
+            });
+
+            bumperVideo.addEventListener("loadstart", () => {
+                loadingState.style.display = "none";
+            });
+
+            bumperVideo.load();
+
+            // Track video completion
+            let videoCompleted = false;
+
+            bumperVideo.addEventListener("timeupdate", () => {
+                if (bumperVideo.currentTime >= bumperVideo.duration - 0.1) {
+                    if (!videoCompleted) {
+                        videoCompleted = true;
+                        onVideoComplete();
+                    }
+                }
+            });
+
+            bumperVideo.addEventListener("ended", () => {
+                if (!videoCompleted) {
+                    videoCompleted = true;
+                    onVideoComplete();
+                }
+            });
+
+            function onVideoComplete() {
+                // Just fade out bumper container - hero content is already visible
+                bumperContainer.style.opacity = "0";
+
+                // Hide bumper after fade out
+                setTimeout(() => {
+                    bumperContainer.style.display = "none";
+                }, 1000);
+            }
+
+            // Extended fallback for 25 seconds (2s loading + 20s video + 3s buffer)
+            setTimeout(() => {
+                if (
+                    !videoCompleted &&
+                    bumperContainer.style.display !== "none"
+                ) {
+                    skipToHeroContent();
+                }
+            }, 25000);
+
+            function skipToHeroContent() {
+                loadingState.style.display = "none";
+                bumperContainer.style.display = "none";
+                heroContent.style.opacity = "1";
+                initScrollAnimations();
+            }
+        }
+
+        // Scroll animation functionality
+        function initScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px",
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animated");
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all elements with animate-on-scroll class
+            document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+                observer.observe(el);
+            });
+        }
+
+        // Countdown timer functionality
+        function updateCountdown() {
+            const weddingDate = new Date("2025-11-22T18:00:00");
+            const now = new Date();
+            const timeLeft = weddingDate - now;
+
+            if (timeLeft > 0) {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor(
+                    (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+                );
+                const minutes = Math.floor(
+                    (timeLeft % (1000 * 60 * 60)) / (1000 * 60),
+                );
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                document.getElementById("days").textContent = String(
+                    days,
+                ).padStart(2, "0");
+                document.getElementById("hours").textContent = String(
+                    hours,
+                ).padStart(2, "0");
+                document.getElementById("minutes").textContent = String(
+                    minutes,
+                ).padStart(2, "0");
+                document.getElementById("seconds").textContent = String(
+                    seconds,
+                ).padStart(2, "0");
+            } else {
+                // Wedding has passed
+                document.getElementById("days").textContent = "00";
+                document.getElementById("hours").textContent = "00";
+                document.getElementById("minutes").textContent = "00";
+                document.getElementById("seconds").textContent = "00";
+            }
+        }
+
+        // Message form handling
+        document
+            .getElementById("messageForm")
+            .addEventListener("submit", async function (e) {
+                e.preventDefault();
+
+                const name = document.getElementById("name").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const message = document.getElementById("message").value.trim();
+
+                if (!name || !message) {
+                    alert("Please fill in your name and message.");
+                    return;
+                }
+
+                const submitBtn = document.querySelector(".submit-btn");
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = "Sending...";
+                submitBtn.disabled = true;
+
+                try {
+                    const response = await fetch(
+                        "https://dashboard.sayjesstoleo.site/api/comments",
+                        {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                            },
+                            body: JSON.stringify({
+                                author: name,
+                                message: message,
+                            }),
+                        },
+                    );
+
+                    if (response.ok) {
+                        // Clear form
+                        document.getElementById("messageForm").reset();
+
+                        // Refresh the page to show new comment
+                        window.location.reload();
+                    } else {
+                        const error = await response.json();
+                        alert(
+                            error.error ||
+                                "Failed to send message. Please try again.",
+                        );
+                    }
+                } catch (error) {
+                    console.error("Error sending message:", error);
+                    alert(
+                        "Failed to send message. Please check your connection and try again.",
+                    );
+                } finally {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }
+            });
+
+        // Initialize countdown and start timer
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Handle personalized greeting
+        function setPersonalizedGreeting() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const nameParam = urlParams.get("name");
+            const validInvitationDiv =
+                document.getElementById("valid-invitation");
+            const invalidInvitationDiv =
+                document.getElementById("invalid-invitation");
+
+            // Use name parameter directly from URL
+            if (nameParam) {
+                document.getElementById("attendee-name").textContent =
+                    decodeURIComponent(nameParam);
+                validInvitationDiv.style.display = "block";
+                invalidInvitationDiv.style.display = "none";
+            } else {
+                // Show invalid invitation screen if no name parameter
+                validInvitationDiv.style.display = "none";
+                invalidInvitationDiv.style.display = "block";
+            }
+        }
+
+        // Load comments from API
+        async function loadComments() {
+            const messagesList = document.getElementById("messagesList");
+            const loadingMessages = document.getElementById("loadingMessages");
+
+            try {
+                loadingMessages.style.display = "block";
+
+                const response = await fetch(
+                    "https://dashboard.sayjesstoleo.site/api/comments",
+                );
+                if (response.ok) {
+                    const comments = await response.json();
+
+                    // Clear loading state
+                    messagesList.innerHTML = "";
+
+                    if (comments.length === 0) {
+                        messagesList.innerHTML = `
+                            <div style="text-align: center; padding: 20px; color: rgba(255,255,255,0.7);">
+                                <p>No messages yet. Be the first to share your wishes!</p>
+                            </div>
+                        `;
+                        return;
+                    }
+
+                    // Add comments to the list
+                    comments.forEach((comment) => {
+                        const messageItem = document.createElement("div");
+                        messageItem.className = "message-item";
+
+                        const date = new Date(comment.createdAt);
+                        const formattedDate = date.toLocaleDateString("en-US", {
+                            month: "short",
+                            day: "numeric",
+                            year: "numeric",
+                        });
+
+                        messageItem.innerHTML = `
+                            <div class="message-header">
+                                <span class="message-name">${comment.author}</span>
+                                <span class="message-date">${formattedDate}</span>
+                            </div>
+                            <p class="message-text">${comment.message}</p>
+                        `;
+
+                        messagesList.appendChild(messageItem);
+                    });
+                } else {
+                    messagesList.innerHTML = `
+                        <div style="text-align: center; padding: 20px; color: rgba(255,255,255,0.7);">
+                            <p>Failed to load messages. Please refresh the page.</p>
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                console.error("Error loading comments:", error);
+                messagesList.innerHTML = `
+                    <div style="text-align: center; padding: 20px; color: rgba(255,255,255,0.7);">
+                        <p>Failed to load messages. Please check your connection.</p>
+                    </div>
+                `;
+            } finally {
+                loadingMessages.style.display = "none";
+            }
+        }
+
+        // Initialize on page load
+        document.addEventListener("DOMContentLoaded", function () {
+            // Preload bumper video for snappy performance
+            const bumperVideo = document.querySelector(".bumper-video");
+            if (bumperVideo) {
+                bumperVideo.load();
+                bumperVideo.preload = "auto";
+            }
+
+            // Show invitation after 2-3 seconds of preloading
+            setTimeout(() => {
+                document.getElementById("initial-loading").style.display =
+                    "none";
+                setPersonalizedGreeting();
+            }, 2500);
+
+            loadComments();
+
+            // Preload images for better performance
+            const imageUrls = [
+                "https://titu.b-cdn.net/chinese_1.png",
+                "https://titu.b-cdn.net/chinese_2.png",
+                "https://titu.b-cdn.net/chinese_3.png",
+                "https://titu.b-cdn.net/chinese_4.png",
+                "https://titu.b-cdn.net/chinese_5.png",
+                "https://titu.b-cdn.net/chinese_6.png",
+                "https://titu.b-cdn.net/chinese_7.png",
+            ];
+
+            imageUrls.forEach((url) => {
+                const img = new Image();
+                img.src = url;
+            });
+        });
+
+        // Preload images for better performance
+        const imageUrls = [
+            "https://titu.b-cdn.net/chinese_1.png",
+            "https://titu.b-cdn.net/chinese_2.png",
+            "https://titu.b-cdn.net/chinese_3.png",
+            "https://titu.b-cdn.net/chinese_4.png",
+            "https://titu.b-cdn.net/chinese_5.png",
+            "https://titu.b-cdn.net/chinese_6.png",
+            "https://titu.b-cdn.net/chinese_7.png",
+        ];
+
+        imageUrls.forEach((url) => {
+            const img = new Image();
+            img.src = url;
+        });
+
+        // Music toggle functionality
+        function toggleMusic() {
+            const bgm = document.getElementById("bgm");
+            const musicToggle = document.getElementById("musicToggle");
+            const musicIcon = document.getElementById("musicIcon");
+
+            if (bgm.paused) {
+                bgm.play().catch((e) => console.log("Error playing music:", e));
+                musicToggle.classList.remove("muted");
+                musicIcon.textContent = "🎵";
+            } else {
+                bgm.pause();
+                musicToggle.classList.add("muted");
+                musicIcon.textContent = "🔇";
+            }
+        }
+    </script>
+</html>
