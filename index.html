@@ -14,24 +14,26 @@
             property="og:description"
             content="You're invited to celebrate the wedding of Boby and Stefany on November 22, 2025. Join us for a beautiful ceremony and reception."
         />
-        <meta property="og:image" content="https://titu.b-cdn.net/bobby_wedding/bobby1.jpg" />
+        <meta
+            property="og:image"
+            content="https://titu.b-cdn.net/bobby_wedding/bobby1.jpg"
+        />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:url" content="https://sayjesstoleo.site" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Boby & Stefany Wedding" />
 
         <!-- Twitter Card Meta Tags -->
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-            name="twitter:title"
-            content="The Wedding of Boby & Stefany"
-        />
+        <meta name="twitter:title" content="The Wedding of Boby & Stefany" />
         <meta
             name="twitter:description"
             content="You're invited to celebrate the wedding of Boby and Stefany on November 22, 2025."
         />
-        <meta name="twitter:image" content="https://titu.b-cdn.net/bobby_wedding/bobby1.jpg" />
+        <meta
+            name="twitter:image"
+            content="https://titu.b-cdn.net/bobby_wedding/bobby1.jpg"
+        />
 
         <!-- Cache Control Meta Tags -->
         <meta
@@ -88,7 +90,8 @@
                     </div>
                     <div id="valid-invitation" style="display: none">
                         <h1 class="invitation-title">
-                            The Wedding of <br> Boby and Stefany
+                            The Wedding of <br />
+                            Boby and Stefany
                         </h1>
                         <div class="invitation-greeting">
                             <p class="dear-text">Dear,</p>
@@ -172,13 +175,13 @@
                     <span class="monsieur animate-on-scroll delay-1">Love</span>
                 </h2>
                 <p class="section-paragraph animate-on-scroll delay-2">
-                    In the sacred union of Boby and Stefany, love blossoms
-                    into an eternal melody—tender as the morning light,
-                    steadfast as the stars. They stand together as two souls
-                    united, discovering the infinite beauty of devotion. With
-                    every glance a promise and every touch a prayer, their
-                    embrace whispers the rhythm of endless love—gentle,
-                    enduring, and forever true
+                    In the sacred union of Boby and Stefany, love blossoms into
+                    an eternal melody—tender as the morning light, steadfast as
+                    the stars. They stand together as two souls united,
+                    discovering the infinite beauty of devotion. With every
+                    glance a promise and every touch a prayer, their embrace
+                    whispers the rhythm of endless love—gentle, enduring, and
+                    forever true
                 </p>
             </div>
         </section>
@@ -205,7 +208,7 @@
                         <h3 class="monsieur animate-on-scroll delay-3">
                             Boby Chandra
                         </h3>
-                         <p class="person-parents animate-on-scroll delay-3">
+                        <p class="person-parents animate-on-scroll delay-3">
                             Eldest Son of (late) Mr. Antony Chandra & Mrs. Yenni
                         </p>
                     </div>
@@ -221,7 +224,7 @@
                         <h3 class="monsieur animate-on-scroll delay-3">
                             Stefany
                         </h3>
-                         <p class="person-parents animate-on-scroll delay-3">
+                        <p class="person-parents animate-on-scroll delay-3">
                             Daughter of Mr. Then Khek Phin & Mrs. Liong Mie Mie
                         </p>
                     </div>
@@ -325,7 +328,9 @@
                 <h2 class="section-6-title animate-on-scroll">
                     Our <span class="monsieur">Moments</span>
                 </h2>
-                <div class="moments-landscape-container animate-on-scroll delay-1">
+                <div
+                    class="moments-landscape-container animate-on-scroll delay-1"
+                >
                     <img
                         src="https://titu.b-cdn.net/bobby_wedding/bobby20_land.jpg"
                         class="landscape-photo-item"
@@ -561,7 +566,9 @@
                                 class="account-section bride-section animate-on-scroll delay-3"
                             >
                                 <h4 class="account-label">Bride</h4>
-                                <p class="account-name">Stefany Dwi Christiani</p>
+                                <p class="account-name">
+                                    Stefany Dwi Christiani
+                                </p>
                                 <p class="account-bank">BCA</p>
                                 <p class="account-number">8530342299</p>
                                 <button
@@ -983,22 +990,22 @@
                 document.getElementById("valid-invitation");
             const invalidInvitationDiv =
                 document.getElementById("invalid-invitation");
-            const loadingDiv =
-                document.getElementById("initial-loading");
+            const loadingDiv = document.getElementById("initial-loading");
 
             if (idParam) {
                 try {
                     // Fetch attendee data from API
                     const response = await fetch(
-                        `https://nikayu-bobbystefany-qroiau-84bf02-160-187-210-229.traefik.me/api/attendees/${idParam}`
+                        `https://nikayu-bobbystefany-qroiau-84bf02-160-187-210-229.traefik.me/api/invitations/${idParam}`,
                     );
-                    
+
                     if (response.ok) {
-                        const attendeeData = await response.json();
-                        
+                        const invitationData = await response.json();
+
                         // Display attendee name from API response
-                        document.getElementById("attendee-name").textContent = attendeeData.name;
-                        
+                        document.getElementById("attendee-name").textContent =
+                            invitationData.name;
+
                         // Hide loading, show valid invitation
                         loadingDiv.style.display = "none";
                         validInvitationDiv.style.display = "block";
