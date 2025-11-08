@@ -941,7 +941,7 @@
 
                 try {
                     const response = await fetch(
-                        "https://nikayu-bobbystefany-qroiau-84bf02-160-187-210-229.traefik.me/api/comments",
+                        "https://bobbystefany-db.titulabs.com/api/comments",
                         {
                             method: "POST",
                             headers: {
@@ -996,7 +996,7 @@
                 try {
                     // Fetch attendee data from API
                     const response = await fetch(
-                        `https://nikayu-bobbystefany-qroiau-84bf02-160-187-210-229.traefik.me/api/invitations/${idParam}`,
+                        `https://bobbystefany-db.titulabs.com/api/invitations/${idParam}`,
                     );
 
                     if (response.ok) {
@@ -1040,7 +1040,7 @@
                 loadingMessages.style.display = "block";
 
                 const response = await fetch(
-                    "https://nikayu-bobbystefany-qroiau-84bf02-160-187-210-229.traefik.me/api/comments",
+                    "https://bobbystefany-db.titulabs.com/api/comments",
                 );
                 if (response.ok) {
                     const comments = await response.json();
